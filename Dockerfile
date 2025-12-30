@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm install --legacy-peer-deps && npm install terser -D
+RUN npm install --legacy-peer-deps && npm install terser -D --legacy-peer-deps
 
 COPY . .
 
